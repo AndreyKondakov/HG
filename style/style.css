@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#7f7f7f !important; color:#000; }
 div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea,button {
 	padding:0;
 	margin:0;
@@ -48,6 +48,7 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+/*@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");*/
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
@@ -56,7 +57,48 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.navbar-brand {
+  text-decoration: none !important;
+  text-shadow: none !important;
+}
 
+.navbar-nav > li > a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #7F7F7F;
+  font-family: play, sans-serif;
+  font-weight: 400;
+  text-shadow: none !important;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #fff !important;
+}
+
+.bg-nav {
+  background-color: #303030;
+}
+
+.navbar-nav {
+  display: -webkit-inline-box;
+}
+
+.nav>li {
+  padding: 0 6%;
+}
+
+.navbar-brand h4 {
+  margin-top: 0;
+}
+
+.navbar-default {
+  background-color: #7f7f7f !important;
+  border-color: #7f7f7f !important;
+}
+
+header {
+  opacity: 0.9;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -68,7 +110,57 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.container-fluid {
+  color: #7F7F7F;
+}
 
+.company {
+  margin-left: 5%;
+  margin-top: 13px;
+}
+
+.bg-nav, .social-icons ul {
+  display: flex;
+}
+
+.social-icons li {
+  margin-right: 27px;
+  padding-top: 10px;
+}
+
+.social-icons i {
+  color: white;
+}
+
+footer {
+  opacity: 0.9;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+
+
+/*----------------- video content-----------------------*/
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 111%;
+  pointer-events: none;
+}
+#vidtop-content {
+  top: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 290%; top: -110%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
