@@ -1,0 +1,90 @@
+body { overflow: scroll; }
+
+/*============================= Products ===================================*/
+.products {  margin-top: 42px;}
+.products .row {  margin-right: 0;}
+.thumbnail {  background-color: #616161 !important;}
+.line-prod {margin-bottom: 5%;}
+.thumbnails a:visited {  color: white;}
+
+.thumbnail a > img, .thumbnail > img {
+  border-radius: 7px;
+  margin-top: 7px;
+}
+
+.thumbnails h5 {
+  font-size: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: play, sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.thumbnails p {
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: play, sans-serif;
+  font-weight: 400;
+}
+
+.thumbnails a:link {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+  font-size: initial;
+}
+
+/*========================== Search =====================*/
+
+#imaginary_container {  width: 80%;}
+#imaginary_container {  margin-top: 9%; margin-bottom: 4%;}
+.stylish-input-group .input-group-addon {  background: #616161 !important;}
+
+.stylish-input-group .form-control {
+  border-right: 0;
+  box-shadow: 0 0 0;
+  border-color: #ccc;
+}
+
+.stylish-input-group button {
+  border: 0;
+  background: transparent;
+}
+
+/*==================== catalog colons1 ================================*/
+
+.catalog {
+  position: fixed !important;
+  margin-top: 9%;
+}
+
+#imaginary_container .form-control {
+  background-color: #616161;
+  color: #fff;
+}
+
+#imaginary_container .stylish-input-group .form-control {
+  border-color: #d7d7d7;
+}
+
+#imaginary_container .input-group-addon {
+  color: #fff;
+}
+
+.catalog li {
+  text-align: left;
+  color: #dedede;
+  font-family: play, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 22%;
+  margin-bottom: 10px;
+}
+
+.catalog li:hover {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
