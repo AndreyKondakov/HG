@@ -182,12 +182,11 @@ header {
 }
 
 .nav-center ul {
-  display: -webkit-box;
+  display: flex;
 }
 
-.nav-center li {
-  padding: 0 15%;
-  /*text-align: center;*/
+.marg-r {
+  margin-right: 45%;
 }
 
 .nav-right {
@@ -211,6 +210,7 @@ header {
   color: white;
   font-size: 18px;
   margin-right: 10px;
+  text-decoration: none;
 }
 
 /**/
@@ -236,11 +236,7 @@ header {
 
 .lang {
   margin-left: 16px;
-  margin-top: 5px;
-  text-decoration: none;
-}
-
-.nav-right a {
+  font-weight: 600;
   text-decoration: none;
 }
 

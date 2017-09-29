@@ -1,4 +1,4 @@
-body { overflow: scroll; }
+body { overflow: auto; }
 
 /*============================= Products ===================================*/
 .products {  margin-top: 42px;}
