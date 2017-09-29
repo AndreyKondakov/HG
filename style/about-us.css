@@ -1,0 +1,51 @@
+.about-us h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-weight: 700;
+  margin-top: 6%;
+  margin-bottom: 25px;
+}
+
+.about-us p {
+  line-height: 25px;
+  font-size: 18px;
+  color: #FFFFFF;
+  font-family: inherit;
+  font-weight: 400;
+}
+
+.about-img img {
+  width: 45px;
+  height: 45px;
+  margin-top: 5px;
+  margin-right: 25px;
+}
+
+.bg-grey {
+  background-color: #7F7F7F;
+  padding-bottom: 999px;
+  /*background-image: url('images/manzara-resimleri-300.jpg');*/
+  /*background: #7F7F7F url('image/manzara-resimleri-300.jpg');*/
+}
+
+.smaller-img {
+  width: 49px;
+  height: 49px;
+}
+
+.bigger-img {
+  width: 43px;
+  height: 43px;
+}
+
+.bonus {
+  margin-bottom: 15px;
+  display: inline-flex;
+}
+.h-sec { margin-top: 2% !important;}
+.first-blok {margin-bottom: 10px;}
+.logo-img {opacity: 0.1;}
+.main-about {padding-top: 1%;}
+
