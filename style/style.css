@@ -66,7 +66,7 @@ a:hover {
   text-decoration: none;
 }
 
-/*----------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .float-r {
@@ -159,9 +159,12 @@ a:hover {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-.navbar-brandб {
+.navbar-brand {
   text-decoration: none !important;
   text-shadow: none !important;
+}
+.navbar-brand h4 {
+  margin-top: 0;
 }
 
 .navbar-nav > li > a, .nav-center a {
@@ -172,32 +175,30 @@ a:hover {
   font-weight: 400;
   text-shadow: none !important;
 }
-
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
   color: #fff !important;
 }
-
-.bg-nav {
+.bg-nav, .d-flex {
   background-color: #303030;
 }
-
-.navbar-nav {
-  display: -webkit-inline-box;
-}
-
-.nav > li {
+.nav li {
   padding: 0 6%;
   margin-left: 5px;
 }
-
-.navbar-brand h4 {
-  margin-top: 0;
-}
-
 .navbar-default {
   background-color: rgba(0, 0, 0, 0.3) !important;
   border-color: rgba(0, 0, 0, 0.3) !important;
 }
+
+@media screen and (min-width: 1240px)  {
+  .navbar-nav {
+  display: -webkit-inline-box;
+  }
+  /*#bs-example-navbar-collapse-1 {*/
+    /*margin-left: 72px;*/
+  /*}*/
+}
+
 
 header {
   opacity: 0.9;
@@ -249,7 +250,7 @@ header {
 
 .main {
   background: rgba(0, 0, 0, 0.3);
-  padding-bottom: 95%;
+  padding-bottom: 130%;
 }
 
 .logo-img {
@@ -274,11 +275,23 @@ header {
   float: right;
   margin-top: 20%;
 }
-.nav-center ul { display: flex; }
-.nav-center li { padding: 0 12%; }
 
-.nav-right li {  padding-bottom: 5px; }
-.hide-el { visibility: hidden }
+.nav-center ul {
+  display: flex;
+}
+
+.nav-center li {
+  padding: 0 12%;
+  text-align: center;
+}
+
+.nav-right li {
+  padding-bottom: 5px;
+}
+
+.hide-el {
+  visibility: hidden
+}
 
 /*на время*/
 .nav-right a {
@@ -286,6 +299,7 @@ header {
   font-size: 18px;
   margin-right: 10px;
 }
+
 /**/
 .limitless {
   z-index: 5;
@@ -321,6 +335,22 @@ header {
   text-decoration: none;
   color: yellow;
 }
+
+@media screen and (max-width: 768px) {
+  .nav-center ul {
+    display: block;
+  }
+  .logo-img {
+    width: 63%;
+    position: fixed;
+    top: 21%;
+    right: 19%;
+  }
+  .nav-right {
+    margin-top: 31%;
+  }
+}
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -337,7 +367,7 @@ header {
   margin-top: 13px;
 }
 
-.bg-nav, .social-icons ul {
+.d-flex, .social-icons ul {
   display: flex;
 }
 
@@ -354,6 +384,11 @@ footer {
   opacity: 0.9;
 }
 
+@media screen and (max-width: 768px) {
+  .social-icons {
+    margin-left: 17%;
+  }
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
