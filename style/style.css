@@ -7,7 +7,7 @@ body {
   padding: 0;
   margin: 0;
   font: 12px Tahoma, sans-serif;
-  background: #7f7f7f !important;
+  background: #464646 !important;
   color: #000;
 }
 
@@ -59,6 +59,10 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 /*@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");*/
+@font-face {
+  font-family: play; /* Гарнитура шрифта */
+  src: url(../fonts/Play-Regular.ttf); /* Путь к файлу со шрифтом */
+}
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
