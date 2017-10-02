@@ -34,7 +34,7 @@ body { overflow-x: hidden; }
   margin-right: 10px;
 }
 
-.inf-product li, .tab_item, .tab, .inf-contact  {
+.inf-product li, .tab_item, .tab, .inf-contact {
   color: #7F7F7F;
   font-size: 20px;
   font-family: play, sans-serif;
@@ -42,7 +42,7 @@ body { overflow-x: hidden; }
   margin-top: 7px;
 }
 
-.inf-product h4, .inf-contact h3 {
+.inf-product h4, .inf-contact h3, .books h3 {
   color: #FFFFFF;
   line-height: 24px;
   font-family: play, sans-serif;

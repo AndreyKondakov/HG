@@ -1,0 +1,14 @@
+.down-pdf {
+  background-color: transparent;
+  border: none;
+  margin-left: 78px;
+  padding: 5px;
+}
+
+.down-pdf:hover{
+  background-color: #323232;
+}
+
+body {
+  overflow-y: auto;
+}

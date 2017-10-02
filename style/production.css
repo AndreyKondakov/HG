@@ -1,7 +1,7 @@
 body { overflow: auto; }
 
 /*============================= Products ===================================*/
-.products {  margin-top: 42px;}
+/*.products {  margin-top: 42px;}*/
 .products .row {  margin-right: 0;}
 .thumbnail {  background-color: #616161 !important;}
 .line-prod {margin-bottom: 5%;}
@@ -21,7 +21,7 @@ body { overflow: auto; }
   margin-top: 0;
 }
 
-.thumbnails p {
+.thumbnails p, .down-pdf {
   font-size: 20px;
   text-align: center;
   color: #FFFFFF;
@@ -39,7 +39,7 @@ body { overflow: auto; }
 /*========================== Search =====================*/
 
 #imaginary_container {  width: 80%;}
-#imaginary_container {  margin-top: 9%; margin-bottom: 4%;}
+#imaginary_container {  margin-top: 7%; margin-bottom: 4%;}
 .stylish-input-group .input-group-addon {  background: #616161 !important;}
 
 .stylish-input-group .form-control {

@@ -110,7 +110,9 @@ a:hover                        { text-decoration:none; }
     /*margin-left: 72px;*/
   /*}*/
 }
-
+.navbar {
+  border: none !important;
+}
 
 header {
   opacity: 0.9;
