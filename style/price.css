@@ -5,7 +5,13 @@
 .price .inp-form .find-pr  {
   border: ridge;
   width: 62%;
+  border-color: #C1C0BF;
 }
+
+.price .inp-form .find-pr:hover  {
+  border-color: white;
+}
+
 
 .price .inp-form .down-pr {
   border: none;
