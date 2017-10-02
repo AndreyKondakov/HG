@@ -1,0 +1,24 @@
+.price {
+  margin-top: 52px;
+}
+
+.price .inp-form .find-pr  {
+  border: ridge;
+  width: 62%;
+}
+
+.price .inp-form .down-pr {
+  border: none;
+  background-color: #464646;
+}
+
+.price .inp-form .down-pr:hover {
+  background-color: #323232;
+}
+
+.price .inp-form .serch-pr {
+  margin-top: 5px;
+}
+.price .inp-form .serch-pr:hover {
+  color: white;
+}
