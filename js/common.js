@@ -5,14 +5,14 @@ $(".inf-tab .tab").click(function () {
   $(".tab_item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active");
 
-
-// $(document).ready(function () {
-//   $('#nav li').hover(
-//     function () {
-//       $('ul', this).slideDown(300);
-//     },
-//     function () {
-//       $('ul', this).slideUp(100);
-//     }
-//   );
-// });
+// nav-right
+$(document).ready(function () {
+  $('#nav li').hover(
+    function () {
+      $('ul', this).slideDown(300);
+    },
+    function () {
+      $('ul', this).slideUp(100);
+    }
+  );
+});
