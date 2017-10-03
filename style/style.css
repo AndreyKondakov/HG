@@ -198,37 +198,108 @@ header {
 .marg-r {
   margin-right: 45%;
 }
-
+/*=================== nav right ======================*/
 .nav-right {
     position: fixed;
-    bottom: 20%;
+    bottom: 30%;
     right: 0%;
     /*float: right;*/
     /*margin-top: 20%;*/
   }
 
-.nav-right li {
-  padding-bottom: 5px;
-}
+/*.nav-right li {*/
+  /*padding-bottom: 5px;*/
+/*}*/
 
 .hide-el {
   visibility: hidden
 }
 
-/*на время*/
+.nav-right a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+.nav-right a:visited {
+  color: white;
+  text-decoration: none;
+}
+
 .nav-right a {
   color: white;
   font-size: 18px;
   text-decoration: none;
 }
 
-/**/
+
+
+.nav-lang {
+  margin:0;
+  padding:0;
+  list-style:none;
+  display: grid;
+}
+.nav-lang li {
+  /*float:left;*/
+  /*display:block;*/
+  /*width:65px;*/
+  /*background:#ccc;*/
+  /*position:relative;*/
+  /*z-index:500;*/
+  /*margin:0 1px;*/
+}
+
+.nav-lang li a {
+  display:block;
+  padding-top: 5px;
+  font-weight:700;
+  height:23px;
+  text-decoration:none;
+  color:#fff;
+  text-align:center;
+  color:#333;
+}
+.nav-lang li a:hover {
+  color:#fff;
+}
+.nav-lang a.selected {
+  color:#f00;
+}
+.nav-lang ul {
+  position:absolute;
+  left:0;
+  display:none;
+  margin:14px 0 0 -1px;
+  padding:0;
+  list-style:none;
+}
+.nav-lang ul li {
+  width: 65px;
+  height: 35px;
+  float: left;
+  /*border-top: 1px solid #fff;*/
+  background-color: #229999;
+  margin-bottom: 2px;
+}
+.nav-lang ul a {
+  display:block;
+  height:15px;
+  padding: 8px 5px;
+  color:#666;
+  margin-right: 12px;
+}
+.nav-lang ul a:hover {
+  text-decoration:underline;
+}
+
+
+
+
+/*==================*/
 .limitless {
   z-index: 5;
   height: 35px;
   width: 52px;
   background-color: rgba(0,0,0,0.2);
-  /*background-color: blue;*/
 }
 
 .right-let {
@@ -250,15 +321,6 @@ header {
   position: relative;
   top: 5px;
   right: 3px;
-}
-
-.nav-right a:hover {
-  text-decoration: none;
-  color: yellow;
-}
-.nav-right a:visited {
-  color: white;
-  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -350,6 +412,7 @@ header {
 
 .d-flex, .social-icons ul {
   display: flex;
+  padding-bottom: 3px;
 }
 
 .social-icons li {
@@ -375,56 +438,3 @@ footer {
 /*----------------------------------------------------------------------------------*/
 body {overflow: hidden;}
 
-.nav-lang {
-  margin:0;
-  padding:0;
-  list-style:none;
-}
-.nav-lang li {
-  float:left;
-  display:block;
-  width:100px;
-  background:#ccc;
-  position:relative;
-  z-index:500;
-  margin:0 1px;
-}
-
-.nav-lang li a {
-  display:block;
-  padding:8px 5px 0 5px;
-  font-weight:700;
-  height:23px;
-  text-decoration:none;
-  color:#fff;
-  text-align:center;
-  color:#333;
-}
-.nav-lang li a:hover {
-  color:#fff;
-}
-.nav-lang a.selected {
-  color:#f00;
-}
-.nav-lang ul {
-  position:absolute;
-  left:0;
-  display:none;
-  margin:0 0 0 -1px;
-  padding:0;
-  list-style:none;
-}
-.nav-lang ul li {
-  width:100px;
-  float:left;
-  border-top:1px solid #fff;
-}
-.nav-lang ul a {
-  display:block;
-  height:15px;
-  padding: 8px 5px;
-  color:#666;
-}
-.nav-lang ul a:hover {
-  text-decoration:underline;
-}
