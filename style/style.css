@@ -211,9 +211,9 @@ header {
   /*padding-bottom: 5px;*/
 /*}*/
 
-.hide-el {
-  visibility: hidden
-}
+/*.hide-el {*/
+  /*visibility: hidden*/
+/*}*/
 
 .nav-right a:hover {
   text-decoration: none;
@@ -230,7 +230,9 @@ header {
   text-decoration: none;
 }
 
-
+.navbar-nav {
+  margin-left: 36px;
+}
 
 .nav-lang {
   margin:0;
@@ -300,6 +302,7 @@ header {
   height: 35px;
   width: 52px;
   background-color: rgba(0,0,0,0.2);
+  margin-bottom: 21px;
 }
 
 .right-let {
