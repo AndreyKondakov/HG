@@ -7,12 +7,10 @@ $(".inf-tab .tab").click(function () {
 
 // nav-right
 $(document).ready(function () {
-  $('#nav li').hover(
+  $('.nav-lang li').hover(
     function () {
-      $('ul', this).slideDown(300);
-    },
-    function () {
-      $('ul', this).slideUp(100);
+      $('ul', this).slideToggle(300);
     }
+
   );
 });

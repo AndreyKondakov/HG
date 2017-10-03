@@ -93,10 +93,10 @@ a:hover                        { text-decoration:none; }
 .bg-nav, .d-flex {
   background-color: #303030;
 }
-.nav li {
-  padding: 0 6%;
+nav li {
+  padding: 0 3%;
+  /*margin-left: 5px;*/
 }
-
 .navbar-default {
   background-color: rgba(0, 0, 0, 0.3) !important;
   border-color: rgba(0, 0, 0, 0.3) !important;
@@ -104,15 +104,21 @@ a:hover                        { text-decoration:none; }
 
 @media screen and (min-width: 1240px)  {
   .navbar-nav {
-  display: -webkit-inline-box;
+    display: inline-block;
+    width: 100%;
   }
+  /*#bs-example-navbar-collapse-1 {*/
+    /*margin-left: 72px;*/
+  /*}*/
 }
 .navbar {
   border: none !important;
 }
+
 header {
   opacity: 0.9;
 }
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -211,17 +217,20 @@ header {
   visibility: hidden
 }
 
+/*на время*/
 .nav-right a {
   color: white;
   font-size: 18px;
   text-decoration: none;
 }
 
+/**/
 .limitless {
   z-index: 5;
   height: 35px;
   width: 52px;
   background-color: rgba(0,0,0,0.2);
+  /*background-color: blue;*/
 }
 
 .right-let {
@@ -294,7 +303,6 @@ header {
   transition: margin 1s;
   display: block;
   padding: 5px 5px;
-  opacity: 0.8;
 }
 
 .slide-container .slide:hover {
@@ -310,6 +318,8 @@ header {
 .slide-container .slide .slide-header {
   float: left;
   width: 40px;
+  /*было 30*/
+  /*padding: 6px 0;*/
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
   -webkit-transition: opacity 1s;
@@ -366,3 +376,57 @@ footer {
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 body {overflow: hidden;}
+
+.nav-lang {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.nav-lang li {
+  float:left;
+  display:block;
+  width:100px;
+  background:#ccc;
+  position:relative;
+  z-index:500;
+  margin:0 1px;
+}
+
+.nav-lang li a {
+  display:block;
+  padding:8px 5px 0 5px;
+  font-weight:700;
+  height:23px;
+  text-decoration:none;
+  color:#fff;
+  text-align:center;
+  color:#333;
+}
+.nav-lang li a:hover {
+  color:#fff;
+}
+.nav-lang a.selected {
+  color:#f00;
+}
+.nav-lang ul {
+  position:absolute;
+  left:0;
+  display:none;
+  margin:0 0 0 -1px;
+  padding:0;
+  list-style:none;
+}
+.nav-lang ul li {
+  width:100px;
+  float:left;
+  border-top:1px solid #fff;
+}
+.nav-lang ul a {
+  display:block;
+  height:15px;
+  padding: 8px 5px;
+  color:#666;
+}
+.nav-lang ul a:hover {
+  text-decoration:underline;
+}
