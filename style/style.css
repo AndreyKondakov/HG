@@ -273,6 +273,8 @@ header {
   margin:14px 0 0 -1px;
   padding:0;
   list-style:none;
+  bottom: 0;
+  margin-bottom: 168px;
 }
 .nav-lang ul li {
   width: 65px;
@@ -293,7 +295,9 @@ header {
   text-decoration:underline;
 }
 
-
+.righ-bar-drp ul {
+  margin-bottom: 168px;
+}
 
 
 /*==================*/
@@ -337,7 +341,7 @@ header {
     right: 19%;
   }
   .nav-right {
-    margin-top: 31%;
+    margin-top: 25%;
   }
 }
 
