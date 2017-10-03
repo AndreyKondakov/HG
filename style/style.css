@@ -95,7 +95,7 @@ a:hover                        { text-decoration:none; }
 }
 .nav li {
   padding: 0 6%;
-  margin-left: 5px;
+  /*margin-left: 5px;*/
 }
 .navbar-default {
   background-color: rgba(0, 0, 0, 0.3) !important;
@@ -162,10 +162,15 @@ header {
 
 /*==================== Main part ===============================*/
 
-/*.main {*/
-  /*background: rgba(0, 0, 0, 0.3);*/
-  /*padding-bottom: 130%;*/
+/*.content {*/
+  /*background: rgba(0, 0, 0, 0.4);*/
+  /*!*padding-bottom: 130%;*!*/
+  /*!*margin-top: -20%;*!*/
 /*}*/
+
+.video-background {
+  opacity: 0.6;
+}
 
 .logo-img {
   width: 25%;
@@ -215,7 +220,6 @@ header {
 .nav-right a {
   color: white;
   font-size: 18px;
-  margin-right: 10px;
   text-decoration: none;
 }
 
@@ -224,8 +228,8 @@ header {
   z-index: 5;
   height: 35px;
   width: 52px;
-  /*background-color: rgba(0,0,0,0.2);*/
-  background-color: blue;
+  background-color: rgba(0,0,0,0.2);
+  /*background-color: blue;*/
 }
 
 .right-let {
@@ -244,11 +248,18 @@ header {
   margin-left: 16px;
   font-weight: 600;
   text-decoration: none;
+  position: relative;
+  top: 5px;
+  right: 3px;
 }
 
 .nav-right a:hover {
   text-decoration: none;
   color: yellow;
+}
+.nav-right a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {

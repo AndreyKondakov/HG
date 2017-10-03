@@ -93,9 +93,9 @@ body { overflow-x: hidden; }
   margin-right: 100px;
 }
 
-.tabs {
-  margin-left: 20px;
-}
+/*.tabs {*/
+  /*margin-left: 20px;*/
+/*}*/
 
 .tab_content {
   margin-bottom: 60px;
