@@ -190,61 +190,6 @@ header {
 .nav-center ul {
   display: flex;
 }
-/* right bar*/
-.marg-r {
-  margin-right: 45%;
-}
-
-.nav-right a {
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-
-.nav-right {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  top: 60%;
-  right: 0;
-  transform: translateY(-50%);
-}
-
-.nav-right > li {
-  margin-bottom: 10px;
-  text-align: center;
-  padding: 10px 0;
-  width: 50px;
-  background-color: rgba(0,0,0,0.2);
-}
-
-.lang {
-  position: relative;
-}
-
-.nav-right .sub-menu {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  bottom: 42px;
-  right: 0;
-  max-height: 0;
-  overflow: hidden;
-}
-
-.sub-menu  li {
-  margin-bottom: 10px;
-  text-align: center;
-  padding: 10px 0;
-  width: 50px;
-  background-color: rgba(0,0,0,0.2);
-}
-
-.lang:hover .sub-menu {
-  max-height: 500%;
-  transition: max-height .5s;
-}
 
 @media screen and (max-width: 768px) {
   .nav-center ul {
@@ -314,6 +259,73 @@ header {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+/* right bar*/
+.marg-r {
+  margin-right: 45%;
+}
+
+.nav-right a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-right {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 60%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.nav-right > li {
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px 0;
+  width: 50px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.lang {
+  position: relative;
+}
+
+.nav-right .sub-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 42px;
+  right: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.sub-menu  li {
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px 0;
+  width: 50px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.lang:hover .sub-menu {
+  max-height: 500%;
+  transition: max-height .5s;
+}
+/* user login in */
+.btn-user-in {
+  float: right;
+  margin-top: 9px;
+  background: transparent;
+  border: none;
+  color: grey;
+  font-size: 16px;
+}
+
+.btn-user-in:hover {
+  color: white;
+}
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
@@ -354,3 +366,54 @@ footer {
 /*----------------------------------------------------------------------------------*/
 body {overflow: hidden;}
 
+#panel, #flip {
+  /*padding: 5px;*/
+  text-align: center;
+  /*background-color: #e5eecc;*/
+  /*border: solid 1px #c3c3c3;*/
+  /*width: 250px;*/
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+  width: 320px;
+  height: 140px;
+  background-color: aqua;
+  margin-top: 1px;
+  margin-left: -5px;
+  background-color: #373737;
+}
+
+.log-in {
+  border: none;
+  margin-left: -2px;
+  padding: 11px 65px;
+  margin-top: 5px;
+  background-color: #7f7f7f;
+  font-size: 16px;
+}
+
+.upper-login {
+  margin-top: -42px;
+  width: 317px;
+  margin-left: -49px;
+}
+
+input[type=checkbox], input[type=radio] .save-me {
+  margin: 0px 5px 0;
+}
+
+.chek-b {
+  float: left;
+  color: #7f7f7f;
+}
+
+.btn-log {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  right: -22%;
+  top: -1px;
+}
