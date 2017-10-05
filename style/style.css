@@ -6,7 +6,7 @@ html, body {  width: 100%;  height: 100%;}
 body {
   padding: 0;
   margin: 0;
-  font: 12px Tahoma, sans-serif;
+  font: 12px play, Tahoma, sans-serif;
   background: #464646 !important;
   color: #000;
 }

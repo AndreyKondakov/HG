@@ -4,7 +4,6 @@ body { overflow: auto; overflow-y: -webkit-paged-y;}
 /*.products {  margin-top: 42px;}*/
 .products .row {  margin-right: 0;}
 .thumbnail {  background-color: #616161 !important;}
-.line-prod {margin-bottom: 5%;}
 .thumbnails a:visited {  color: white;}
 
 .thumbnail a > img, .thumbnail > img {
@@ -89,5 +88,5 @@ body { overflow: auto; overflow-y: -webkit-paged-y;}
 }
 
 .prodution {
-  margin-left: 11%;
+  margin-left: 1;
 }
