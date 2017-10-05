@@ -15,7 +15,7 @@
 <body>
 <div class="wrapper">
   <header>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid bg-nav">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -52,7 +52,20 @@
     <div class="slide-container">
       <div class="slide">
         <div class="slide-header"><img src="images/user_poster_u1930.png"></div>
-        <div class="slide-content">Приветствуем вас Александр</div>
+        <div class="slide-content">
+          <span>Приветствуем вас</span>
+          <input class="btn-user-in" type="button" value="Войти" id="flip">
+          <div id="panel">
+            <div class="upper-login">
+              <input class="log-in" type="text" placeholder="Введите логин..." required>
+              <input class="log-in" type="password" placeholder="Введите пароль..." required>
+            </div>
+            <div class="chek-b">
+              <input class="save-me" type="checkbox" name="save-me" value="remember me">Запомнить меня
+            </div>
+            <input class="btn-log" type="button" value="Войти">
+          </div>
+        </div>
       </div>
     </div>
     <ul class="nav-right">

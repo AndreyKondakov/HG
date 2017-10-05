@@ -1,4 +1,4 @@
-body { overflow: auto; }
+body { overflow: auto; overflow-y: -webkit-paged-y;}
 
 /*============================= Products ===================================*/
 /*.products {  margin-top: 42px;}*/
@@ -88,3 +88,6 @@ body { overflow: auto; }
   font-weight: 600;
 }
 
+.prodution {
+  margin-left: 11%;
+}
