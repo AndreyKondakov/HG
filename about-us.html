@@ -16,7 +16,7 @@
 <body>
 <div class="wrapper">
   <header>
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid bg-nav">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -26,11 +26,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand hidden-md hidden-lg" href="index.html"><h4> Haltron Group</h4></a>
+          <a class="navbar-brand hidden-md hidden-lg" href="#"><h4> Haltron Group</h4></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="about-us.html">О нас</a></li>
+            <li><a href="index.html">Главная</a></li>
             <li><a href="production.html">Продукция</a></li>
             <li><a href="catalog.html">Каталоги</a></li>
             <li><a href="price.html">Прайс</a></li>
@@ -41,32 +41,20 @@
       </div>
     </nav>
   </header>
+
   <div class="content">
-    <div class="video-background">
-      <div class="video-foreground">
-        <iframe src="https://www.youtube.com/embed/66_0-vflDS8?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ&start=0" allowfullscreen frameborder="0" mute="true"></iframe>
-      </div>
-    </div>
+    <!--<div class="video-background">-->
+    <!--<div class="video-foreground">-->
+    <!--<iframe src="https://www.youtube.com/embed/66_0-vflDS8?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ&start=0" allowfullscreen frameborder="0" mute="true"></iframe>-->
+    <!--</div>-->
+    <!--</div>-->
   </div>
-  <div class="main">
-    <img class="logo-img" src="images/logo.svg">
+  <div class="main main-about">
+    <!--<img class="logo-img" src="images/logo.svg">-->
     <div class="slide-container">
       <div class="slide">
         <div class="slide-header"><img src="images/user_poster_u1930.png"></div>
-        <div class="slide-content">
-          <span>Приветствуем вас</span>
-          <input class="btn-user-in" type="button" value="Войти" id="flip">
-          <div id="panel">
-            <div class="upper-login">
-              <input class="log-in" type="text" placeholder="Введите логин..." required>
-              <input class="log-in" type="password" placeholder="Введите пароль..." required>
-            </div>
-            <div class="chek-b">
-              <input class="save-me" type="checkbox" name="save-me" value="remember me">Запомнить меня
-            </div>
-            <input class="btn-log" type="button" value="Войти">
-          </div>
-        </div>
+        <div class="slide-content">Приветствуем вас Александр</div>
       </div>
     </div>
     <ul class="nav-right">
@@ -80,12 +68,61 @@
       <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
       <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
     </ul>
-    <div class="nav-center col-md-offset-3">
-      <ul>
-        <li class="marg-r"><a href="production.html"><h3>Продукция</h3></a></li>
-        <li class="marg-r"><a href="catalog.html"><h3>Каталог</h3></a></li>
-        <li class="marg-r"><a href="contacts.html"><h3>Контакты</h3></a></li>
-      </ul>
+    <div class="about-us">
+      <h2>Кто мы?</h2>
+      <div class="first-blok col-md-8 col-md-offset-2">
+        <p><b>Haltron Group</b> - современная, динамичная компания с иностранными инвестициями на рынке Украины.
+          Работаем в сфере обеспечения сельскохозяйственных производителей качественной продукцией и услугами для
+          повышения ефективности технологий выращивания сельскохозяйственных культур.
+          Мы являемся официальным импортёром и дистрибютором минеральных удобрений иностарнных и отечественных компаний.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="about-us">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="h-sec">Почему мы?</h2>
+          <div class="bonus col-md-4">
+            <div class="about-img">
+              <img class="bigger-img" src="images/flasks_poster_.png">
+            </div>
+            <p>Cотрудничаем с научными институтами</p>
+          </div>
+          <div class="bonus col-md-4">
+            <div class="about-img">
+              <img src="images/cloud-computing%20white_poster_.png">
+            </div>
+            <p>Внедряем новые технологии</p>
+          </div>
+          <div class="bonus col-md-4">
+            <div class="about-img">
+              <img src="images/delivery-man_poster_.png">
+            </div>
+            <p>Бесплатная доставка
+            </p>
+          </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+          <div class="bonus col-md-4">
+            <div class="about-img">
+              <img class="smaller-img" src="images/handshake_poster_.png">
+            </div>
+            <p>Более 150 компаний клиенты</p>
+          </div>
+          <div class="bonus col-md-4">
+            <div class="about-img">
+              <img src="images/medal_poster_.png">
+            </div>
+            <p>Высокое качество</p>
+          </div>
+          <div class="bonus col-md-4">
+            <div class="about-img">
+              <img src="images/telemarketer_poster_.png">
+            </div>
+            <p>Консультации от агрономов</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -105,12 +142,7 @@
   </footer>
 </div>
 
-<!--<link rel="stylesheet" type="text/css" href="style/about-us.css"/>-->
 <link rel="stylesheet" type="text/css" href="style/about-us.css"/>
-<link rel="stylesheet" type="text/css" href="style/production.css"/>
-<link rel="stylesheet" type="text/css" href="style/product.css"/>
-<link rel="stylesheet" type="text/css" href="style/contacts.css">
-<link rel="stylesheet" type="text/css" href="style/catalog.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="js/common.js"></script>

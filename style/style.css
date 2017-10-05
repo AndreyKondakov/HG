@@ -1,14 +1,23 @@
 /*----------------------------------------------------------------------------------*/
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
-html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
-div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea,button {
-	padding:0;
-	margin:0;
-	outline:none;
-	list-style:none;
+html, body {  width: 100%;  height: 100%;}
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 12px Tahoma, sans-serif;
+  background: #464646 !important;
+  color: #000;
 }
+
+div, menu, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, legend, label, select, input, textarea, button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
 button                         { cursor: pointer; padding: 0 }
 select, input, textarea,button { font:12px Tahoma, sans-serif; vertical-align:middle; }
 textarea                       { vertical-align:top; }
@@ -19,7 +28,8 @@ img                            { vertical-align: top; }
 table                          { border-collapse:collapse; border-spacing:0; }
 a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
 a:hover                        { text-decoration:none; }
-/*----------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .float-r           	           { float:right !important; }
@@ -41,13 +51,18 @@ a:hover                        { text-decoration:none; }
 .clearfix                      { display: inline-block; width: 100% }
 
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FONTS----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+/*@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");*/
+@font-face {
+  font-family: play; /* Гарнитура шрифта */
+  src: url(../fonts/Play-Regular.ttf); /* Путь к файлу со шрифтом */
+}
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
@@ -56,19 +71,351 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.navbar-brand {
+  text-decoration: none !important;
+  text-shadow: none !important;
+}
+.navbar-brand h4 {
+  margin-top: 0;
+}
+
+.navbar-nav > li > a, .nav-center a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #7F7F7F;
+  font-family: play, sans-serif;
+  font-weight: 400;
+  text-shadow: none !important;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: #fff !important;
+}
+.bg-nav, .d-flex {
+  background-color: #303030;
+}
+nav li {
+  padding: 0 3%;
+}
+.navbar-nav {
+  margin-left: 40px;
+}
+.navbar-default {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+@media screen and (min-width: 1240px)  {
+  .navbar-nav {
+    display: inline-block;
+    width: 100%;
+  }
+
+}
+.navbar {
+  border: none !important;
+}
+
+header {
+  opacity: 0.9;
+}
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+/*----------------- video content-----------------------*/
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
 
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 111%;
+  pointer-events: none;
+}
+
+#vidtop-content {
+  top: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground {
+    height: 290%;
+    top: -110%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+/*==================== Main part ===============================*/
+
+.video-background {
+  opacity: 0.3;
+}
+
+.logo-img {
+  width: 25%;
+  position: fixed;
+  top: 14%;
+  right: 39%;
+  z-index: -1;
+}
+
+.nav-center {
+  z-index: 5;
+  position: fixed;
+  top: 79%;
+}
+
+.nav-center h3 {
+  color: #FFFFFF;
+  font-family: play, sans-serif;
+  font-weight: 700;
+}
+
+.nav-center ul {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-center ul {
+    display: block;
+  }
+  .logo-img {
+    width: 63%;
+    position: fixed;
+    top: 21%;
+    right: 19%;
+  }
+}
+
+/*slide person right */
+.slide-container {
+  position: fixed;
+  top: 83px;
+  left: 75%;
+}
+
+.slide-container .slide {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  height: 42px;
+  line-height: 41px;
+  margin: 0 0 0 270px;
+  position: relative;
+  text-align: center;
+  width: 323px;
+  -moz-transition: margin 1s;
+  -o-transition: margin 1s;
+  -webkit-transition: margin 1s;
+  transition: margin 1s;
+  display: block;
+  padding: 5px 5px;
+}
+
+.slide-container .slide:hover {
+  margin-left: 0;
+}
+
+.slide-container .slide .slide-content {
+  width: 280px;
+  position: relative;
+  top: -4px;
+}
+
+.slide-container .slide .slide-header {
+  float: left;
+  width: 35px;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+
+}
+
+.slide-container .slide:hover .slide-header {
+  opacity: 0;
+}
+
+.slide img {
+  width: 88%;
+  margin-left: 5px;
+  margin-top: 1px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+/* right bar*/
+.marg-r {
+  margin-right: 45%;
+}
+
+.nav-right a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-right {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 60%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.nav-right > li {
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px 0;
+  width: 50px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.lang {
+  position: relative;
+}
+
+.nav-right .sub-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 42px;
+  right: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.sub-menu  li {
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px 0;
+  width: 50px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.lang:hover .sub-menu {
+  max-height: 500%;
+  transition: max-height .5s;
+}
+/* user login in */
+.btn-user-in {
+  float: right;
+  margin-top: 9px;
+  background: transparent;
+  border: none;
+  color: grey;
+  font-size: 16px;
+}
+
+.btn-user-in:hover {
+  color: white;
+}
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.container-fluid {
+  color: #7F7F7F;
+}
 
+.company {
+  margin-left: 5%;
+  margin-top: 13px;
+}
+
+.d-flex, .social-icons ul {
+  display: flex;
+}
+
+.social-icons li {
+  margin-right: 27px;
+  padding: 10px 0;
+}
+
+.social-icons i {
+  color: white;
+}
+
+footer {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+  .social-icons {
+    margin-left: 17%;
+  }
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+body {overflow: hidden;}
+
+#panel, #flip {
+  /*padding: 5px;*/
+  text-align: center;
+  /*background-color: #e5eecc;*/
+  /*border: solid 1px #c3c3c3;*/
+  /*width: 250px;*/
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+  width: 320px;
+  height: 140px;
+  background-color: aqua;
+  margin-top: 1px;
+  margin-left: -5px;
+  background-color: #373737;
+  opacity: 0.8;
+}
+
+.log-in {
+  border: none;
+  margin-left: -2px;
+  padding: 11px 65px;
+  margin-top: 5px;
+  background-color: #7f7f7f;
+  font-size: 16px;
+}
+
+.upper-login {
+  margin-top: -42px;
+  width: 317px;
+  margin-left: -49px;
+}
+
+input[type=checkbox], input[type=radio] .save-me {
+  margin: 0px 5px 0;
+}
+
+.chek-b {
+  float: left;
+  color: #7f7f7f;
+}
+
+.btn-log {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  right: -22%;
+  top: -1px;
+}
+
