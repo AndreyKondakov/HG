@@ -383,6 +383,7 @@ body {overflow: hidden;}
   margin-top: 1px;
   margin-left: -5px;
   background-color: #373737;
+  opacity: 0.8;
 }
 
 .log-in {
@@ -417,3 +418,4 @@ input[type=checkbox], input[type=radio] .save-me {
   right: -22%;
   top: -1px;
 }
+
