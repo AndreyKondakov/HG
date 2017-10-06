@@ -7,7 +7,9 @@ body {
   padding: 0;
   margin: 0;
   font: 12px play, Tahoma, sans-serif;
-  background: #464646 !important;
+  /*background: #464646 !important;*/
+  background-image: url('https://wallpapershome.ru/images/pages/pic_hs/5190.jpg');
+  background-attachment: fixed;
   color: #000;
 }
 

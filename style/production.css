@@ -97,14 +97,16 @@ body { overflow: auto; overflow-y: -webkit-paged-y;}
 }
 
 .singl-prod {
-  /*background-color: blue;*/
   display: inherit;
+  margin-left: 8%;
 }
 
 .thumbnails {
-  display: inline-block;
+  display: inline-table;
+  margin-left: 9%;
 }
 
 .thumbnail {
   height: 358px;
+  width: 229px;
 }
