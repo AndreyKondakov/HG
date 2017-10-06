@@ -100,3 +100,11 @@ body { overflow: auto; overflow-y: -webkit-paged-y;}
   /*background-color: blue;*/
   display: inherit;
 }
+
+.thumbnails {
+  display: inline-block;
+}
+
+.thumbnail {
+  height: 358px;
+}

@@ -2,7 +2,7 @@ body { overflow-x: hidden; }
 .img-product img{ width: 100%; }
 
 .product {
-  margin-top: 52px;
+  /*margin-top: 52px;*/
 }
 
 .info-product a {
