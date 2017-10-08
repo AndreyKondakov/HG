@@ -1,6 +1,7 @@
+/*
 body { overflow: auto; overflow-y: -webkit-paged-y;}
 
-/*!*============================= Products ===================================*!*/
+!*!*============================= Products ===================================*!*!
 .thumbnail {  background-color: #616161;}
 .thumbnails a:visited {  color: white;}
 .thumbnail a > img, .thumbnail > img {
@@ -53,7 +54,7 @@ body { overflow: auto; overflow-y: -webkit-paged-y;}
   flex-basis: 211px;
 }
 
-/*!*========================== Search =====================*!*/
+!*!*========================== Search =====================*!*!
 
 #imaginary_container {  width: 80%;}
 #imaginary_container {      margin-top: 2%;  margin-bottom: 6%;}
@@ -70,7 +71,7 @@ body { overflow: auto; overflow-y: -webkit-paged-y;}
   background: transparent;
 }
 
-/*!*==================== catalog colons1 ================================*!*/
+!*!*==================== catalog colons1 ================================*!*!
 
 .catalog {
   position: fixed;
@@ -107,3 +108,14 @@ body { overflow: auto; overflow-y: -webkit-paged-y;}
   color: #FFFFFF;
   font-weight: 600;
 }
+*/
+
+body { overflow: auto; overflow-y: -webkit-paged-y;}
+
+.product {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
