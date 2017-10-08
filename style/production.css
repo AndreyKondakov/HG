@@ -56,6 +56,13 @@ body { overflow: auto; overflow-y: -webkit-paged-y;}
 
 !*!*========================== Search =====================*!*!
 
+
+
+!*!*==================== catalog colons1 ================================*!*!
+
+
+*/
+
 #imaginary_container {  width: 80%;}
 #imaginary_container {      margin-top: 2%;  margin-bottom: 6%;}
 .stylish-input-group .input-group-addon {  background: #616161;}
@@ -70,8 +77,6 @@ body { overflow: auto; overflow-y: -webkit-paged-y;}
   border: 0;
   background: transparent;
 }
-
-!*!*==================== catalog colons1 ================================*!*!
 
 .catalog {
   position: fixed;
@@ -108,14 +113,56 @@ body { overflow: auto; overflow-y: -webkit-paged-y;}
   color: #FFFFFF;
   font-weight: 600;
 }
-*/
 
-body { overflow: auto; overflow-y: -webkit-paged-y;}
+body { overflow: auto;}
+
+.flex-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  width: 33.3%;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
 
 .product {
-  margin-bottom: 20px;
+  height: 100%;
   padding: 10px;
+  text-align: center;
   background-color: white;
   border-radius: 5px;
 }
 
+.product .thumbnail {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.product .thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.product .title {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.product .price {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.product .show-more {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5px 15px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
