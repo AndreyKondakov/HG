@@ -23,13 +23,6 @@
   margin-right: 25px;
 }
 
-.bg-grey {
-  background-color: #7F7F7F;
-  padding-bottom: 999px;
-  /*background-image: url('images/manzara-resimleri-300.jpg');*/
-  /*background: #7F7F7F url('image/manzara-resimleri-300.jpg');*/
-}
-
 .smaller-img {
   width: 49px;
   height: 49px;
@@ -46,6 +39,5 @@
 }
 .h-sec { margin-top: 2% !important;}
 .first-blok {margin-bottom: 10px;}
-/*.logo-img {opacity: 0.1;}*/
 .main-about {padding-top: 1%;}
 

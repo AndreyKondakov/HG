@@ -1,11 +1,11 @@
 body { overflow-x: hidden; }
 .img-product img{ width: 100%; }
 
-.product {
-  /*margin-top: 52px;*/
+.page-product {
+  overflow-y: auto;
 }
 
-.info-product a {
+.page-product .info-product a {
   /*font-size: 16px;*/
   font-family: play, sans-serif;
   font-weight: 700;
@@ -13,36 +13,36 @@ body { overflow-x: hidden; }
   text-decoration: none;
 }
 
-.info-product a:hover {
+.page-product .info-product a:hover {
   text-decoration: none;
   color: white;
 }
 
-.info-product h1 {
+.page-product .info-product h1 {
   color: #FFFFFF;
   font-size: 30px;
   font-family: play, sans-serif;
   font-weight: 700;
 }
 
-.inf-product {
+.page-product .inf-product {
   margin-left: 90px;
 }
 
-.inf-product img {
+.page-product .inf-product img {
   width: 3%;
   margin-right: 10px;
 }
 
-.inf-product li, .tab_item, .tab, .inf-contact {
-  color: #7F7F7F;
+.page-product .inf-product li, .tab_item, .tab, .inf-contact {
+  color: #cecece;
   font-size: 20px;
   font-family: play, sans-serif;
   font-weight: 400;
   margin-top: 7px;
 }
 
-.inf-product h4, .inf-contact h3, .books h3 {
+.page-product .inf-product h4, .inf-contact h3, .books h3 {
   color: #FFFFFF;
   line-height: 24px;
   font-family: play, sans-serif;
@@ -50,7 +50,7 @@ body { overflow-x: hidden; }
   padding-top: 15px;
 }
 
-/*-----------*/
+/*-----  inp for product and price   ------*/
 .inp-form {
   display: flex;
   margin-top: 27px;
@@ -66,15 +66,15 @@ body { overflow-x: hidden; }
 }
 
 /* tabs */
-.inf-tab {
+.page-product .inf-tab {
   margin-top: 25px;
 }
 
-.inf-tab .active {
+.page-product .inf-tab .active {
   color: white;
 }
 
-.tab {
+.page-product .tab {
   cursor: pointer;
   border: 1px solid white;
   border-radius: 3px 3px 0 0;
@@ -83,13 +83,13 @@ body { overflow-x: hidden; }
 
 }
 
-.tab_item {
+.page-product .tab_item {
   border: 1px solid white;
   border-radius: 3px;
   padding: 1em;
 }
 
-.tab_content {
+.page-product .tab_content {
   margin-right: 100px;
 }
 
@@ -97,6 +97,6 @@ body { overflow-x: hidden; }
   /*margin-left: 20px;*/
 /*}*/
 
-.tab_content {
+.page-product .tab_content {
   margin-bottom: 60px;
 }
