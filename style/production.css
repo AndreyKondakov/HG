@@ -1,22 +1,4 @@
-
-/*body { overflow: auto; overflow-y: -webkit-paged-y;}*/
-
 /*!*!*============================= Products ===================================*!*!*/
-/*.thumbnail {  background-color: #616161;}*/
-/*.thumbnails a:visited {  color: white;}*/
-/*.thumbnail a > img, .thumbnail > img {*/
-  /*border-radius: 7px;*/
-  /*margin-top: 7px;*/
-/*}*/
-
-/*.thumbnails h5 {*/
-  /*font-size: 21px;*/
-  /*text-align: center;*/
-  /*color: #FFFFFF;*/
-  /*font-family: play, sans-serif;*/
-  /*font-weight: 700;*/
-  /*line-height: 19px;*/
-/*}*/
 
 h5.title, .down-pdf {
   font-size: 19px;
@@ -27,40 +9,21 @@ h5.title, .down-pdf {
   padding-top: 4px;
 }
 
-/*.thumbnails a:link {*/
-  /*text-decoration: none;*/
-  /*font: inherit;*/
-  /*color: inherit;*/
-  /*font-size: initial;*/
-/*}*/
-
-/*.my-flex-wrap {*/
-  /*display: flex;*/
-  /*height: 100%;*/
-  /*width: 94%;*/
-  /*position: relative;*/
-  /*left: 23%;*/
-/*}*/
-
-/*.thumbnails {*/
-  /*display: flex;*/
-  /*flex-flow: row wrap;*/
-  /*align-items: flex-start;*/
-  /*justify-content: flex-start;*/
-/*}*/
-
-/*.thumbnails li {*/
-  /*margin-right: 8%;*/
-  /*flex-basis: 211px;*/
-/*}*/
-
 /*!*!*========================== Search =====================*!*!*/
 
+body.production-page #imaginary_container .form-control {
+  background-color: #616161;
+  color: #fff;
+}
 
+body.production-page #imaginary_container .stylish-input-group .form-control {
+  border-color: #d7d7d7;
+}
 
+body.production-page #imaginary_container .input-group-addon {
+  color: #fff;
+}
 /*!*!*==================== catalog colons1 ================================*!*!*/
-
-
 
 body.production-page #imaginary_container {  width: 80%;}
 body.production-page #imaginary_container {      margin-top: 2%;  margin-bottom: 6%;}
@@ -87,19 +50,6 @@ body.production-page .catalog {
   opacity: 0.6;
   /* color: white; */
   border-radius: 7px;
-}
-
-body.production-page #imaginary_container .form-control {
-  background-color: #616161;
-  color: #fff;
-}
-
-body.production-page #imaginary_container .stylish-input-group .form-control {
-  border-color: #d7d7d7;
-}
-
-body.production-page #imaginary_container .input-group-addon {
-  color: #fff;
 }
 
 body.production-page .catalog li, .catalog a {
@@ -177,4 +127,3 @@ body.production-page .flex-item {
   font-size: 18px;
   color: white;
 }
-
