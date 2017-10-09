@@ -28,3 +28,7 @@
 .price .inp-form .serch-pr:hover {
   color: white;
 }
+
+.price .inp-form {
+  margin-left: 25%;
+}

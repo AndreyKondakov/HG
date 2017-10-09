@@ -5,3 +5,11 @@ body {  overflow: hidden;}
 .books h3 {
   text-align: center;
 }
+
+.contacts .inf-contact {
+  line-height: 1.5;
+}
+
+.contacts .inp-form input {
+  border-color: white;
+}

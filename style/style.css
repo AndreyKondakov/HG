@@ -7,7 +7,6 @@ body {
   padding: 0;
   margin: 0;
   font: 12px play, Tahoma, sans-serif;
-  /*background: #464646 !important;*/
   background-image: url('https://wallpapershome.ru/images/pages/pic_hs/5190.jpg');
   background-attachment: fixed;
   color: #000;
@@ -65,7 +64,6 @@ a:hover                        { text-decoration:none; }
   font-family: play; /* Гарнитура шрифта */
   src: url(../fonts/Play-Regular.ttf); /* Путь к файлу со шрифтом */
 }
-
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -115,7 +113,6 @@ nav li {
     display: inline-block;
     width: 100%;
   }
-
 }
 .navbar {
   border: none !important;
@@ -124,7 +121,6 @@ nav li {
 header {
   opacity: 0.9;
 }
-
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -168,7 +164,6 @@ header {
 }
 
 /*==================== Main part ===============================*/
-
 .video-background {
   opacity: 0.3;
 }
@@ -373,11 +368,7 @@ footer {
 body {overflow: hidden;}
 
 #panel, #flip {
-  /*padding: 5px;*/
   text-align: center;
-  /*background-color: #e5eecc;*/
-  /*border: solid 1px #c3c3c3;*/
-  /*width: 250px;*/
 }
 
 #panel {
@@ -424,4 +415,3 @@ input[type=checkbox], input[type=radio] .save-me {
   right: -22%;
   top: -1px;
 }
-
