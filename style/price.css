@@ -4,7 +4,7 @@
 
 .price .inp-form .find-pr  {
   border: ridge;
-  width: 62%;
+  width: 59%;
   border-color: #C1C0BF;
 }
 
@@ -31,4 +31,8 @@
 
 .price .inp-form {
   margin-left: 25%;
+}
+
+body {
+  overflow: hidden;
 }

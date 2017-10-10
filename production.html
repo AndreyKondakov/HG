@@ -13,10 +13,11 @@
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 </head>
 
-<body class="production-page">
-<div class="wrapper  blackout">
+<body>
+<section class="production-page">
+<div class="wrapper">
   <header>
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid bg-nav">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -41,9 +42,9 @@
       </div>
     </nav>
   </header>
-  <div class="container">
+  <div class="container main-products">
     <div class="search">
-      <div class="col-sm-6 col-sm-offset-4">
+      <div class="col-sm-6 col-sm-offset-4 behind">
         <div id="imaginary_container">
           <div class="input-group stylish-input-group">
             <input type="text" class="form-control" placeholder="Search">
@@ -57,18 +58,43 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-3">
-        <div class="catalog">
-          <ul class="sidebar">
-            <li><a href="#">Azot</a></li>
-            <li><a href="#">Комплексные</a></li>
-            <li><a href="#">Азот</a></li>
-            <li><a href="#">Азотные</a></li>
-            <li><a href="#">Фосфатные</a></li>
-            <li><a href="#">Калийные</a></li>
+      <!--<div class="col-md-3">-->
+        <!--<div class="catalog hidden-xs">-->
+          <!--<ul class="sidebar">-->
+            <!--<li><a href="#">Azot</a></li>-->
+            <!--<li><a href="#">Комплексные</a></li>-->
+            <!--<li><a href="#">Азот</a></li>-->
+            <!--<li><a href="#">Азотные</a></li>-->
+            <!--<li><a href="#">Фосфатные</a></li>-->
+            <!--<li><a href="#">Калийные</a></li>-->
+          <!--</ul>-->
+        <!--</div>-->
+      <!--</div>-->
+      <section class="production-page col-md-3">
+        <div class="category-menu">
+          <h5>Продукция</h5>
+          <ul class="white-link">
+            <li><a href="#">Комплекные </a></li>
+            <li><a href="#">Азотные </a></li>
+            <li><a href="#">Фосфатные </a></li>
+            <li><a href="#">Калийные </a></li>
+          </ul>
+          <h5>Цена</h5>
+          <span class="text-left">8000</span>
+          <span class="text-left">32000</span>
+          <span class="move"></span>
+          <h5>Примерение</h5>
+          <ul class="white-link">
+            <li><a href="#"> Колосковые </a></li>
+            <li><a href="#">Бурячки</a></li>
+            <li><a href="#">Квасолька</a></li>
+            <li><a href="#">Луга</a></li>
+            <li><a href="#">Сады</a></li>
+            <li><a href="#">Кукурудза</a></li>
+            <li><a href="#">Картопелька</a></li>
           </ul>
         </div>
-      </div>
+      </section>
       <div class="col-md-9 col-md-offset-2">
         <ul class="flex-content">
           <li class="flex-item">
@@ -76,7 +102,7 @@
               <div class="thumbnail">
                 <img src="http://placehold.it/204x204" alt="">
               </div>
-              <h5 class="title">Product Product</h5>
+              <h5 class="title">Lubofos</h5>
               <span class="price">Цена: <span>12000</span>грн/т</span>
               <a href="product.html" class="show-more btn">Подробности</a>
             </div>
@@ -86,7 +112,7 @@
               <div class="thumbnail">
                 <img src="http://placehold.it/204x204" alt="">
               </div>
-              <h5 class="title">Product Product Product Product</h5>
+              <h5 class="title">Kalium</h5>
               <span class="price">Цена: <span>12000</span>грн/т</span>
               <a href="product.html" class="show-more btn">Подробности</a>
             </div>
@@ -96,7 +122,7 @@
               <div class="thumbnail">
                 <img src="http://placehold.it/204x204" alt="">
               </div>
-              <h5 class="title">Product Product Product Product</h5>
+              <h5 class="title">Product Product </h5>
               <span class="price">Цена: <span>12000</span>грн/т</span>
               <a href="product.html" class="show-more btn">Подробности</a>
             </div>
@@ -183,6 +209,20 @@
           </li>
         </ul>
       </div>
+    </div>
+    <div class="pagination">
+      <ul>
+        <li><a href="#" class="prev"><</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">...</a></li>
+        <li><a href="#">18</a></li>
+        <li><a href="#" class="next">></a></li>
+      </ul>
     </div>
   </div>
   <div class="main">
@@ -232,6 +272,7 @@
       </div>
     </div>
   </footer>
+</section>
 </div>
 
 <!--========================= Style  ========================-->
