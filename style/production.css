@@ -107,7 +107,7 @@ section.production-page .thumbnail {
 
 .product {
   height: 100%;
-  padding: 10px;
+  /*padding: 10px;*/
   text-align: center;
   background-color: rgba(0, 0, 0, 0.41);;
   border-radius: 5px;
@@ -123,7 +123,7 @@ section.production-page .thumbnail {
 .product .thumbnail img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
 }
 
 .product .title {
@@ -147,16 +147,19 @@ section.production-page .thumbnail {
   text-decoration: none;
   font-size: 18px;
   color: white;
+  margin-bottom: 10px;
 }
 
 /*  Mobile   */
 @media (max-width: 767px) {
-    body.production-page .flex-item {
-    width: 93.3%;
+  section.production-page .flex-item {
+    width: 95.3%;
+    margin-left: 13px;
   }
 
+
   section.production-page #imaginary_container {
-    width: 97%;
+    width: 101%;
   }
 }
 
