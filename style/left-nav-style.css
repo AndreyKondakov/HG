@@ -341,3 +341,9 @@ nav.nav h5 {
   font-weight: 600;
   margin: 20px 0;
 }
+
+[id='nav-toggle']:checked ~ main > article {
+-webkit-transform: translateX(-320px);
+-moz-transform: translateX(-320px);
+transform: translateX(-320px);
+}

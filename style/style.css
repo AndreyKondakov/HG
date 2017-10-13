@@ -456,3 +456,211 @@ input[type=checkbox], input[type=radio] .save-me {
   border-radius: 5px;
   box-shadow: inset 0.05em 0.05em 0 rgba(0, 0, 0, 0.1), inset 0 -0.05em 0 rgba(0, 0, 0, 0.07);
 }
+
+
+
+
+.navbar-right .nav-email {
+  /*  ширна произвольная, не стесняйтесь экспериментировать */
+  width: 440px;
+  min-width: 440px;
+  /* фиксируем и выставляем высоту панели на максимум */
+  height: 315px;
+  position: fixed;
+  top: 40%;
+  bottom: 0;
+  margin: 0;
+  /* сдвигаем (прячем) панель относительно правого края страницы */
+  right: -440px;
+  /* внутренние отступы */
+  padding: 38px 0 0 0;
+  /* плавный переход смещения панели */
+  -webkit-transition: right 0.3s;
+  -moz-transition: right 0.3s;
+  transition: right 0.3s;
+  /* определяем цвет фона панели */
+  background: #16a085;
+  /* поверх других элементов */
+  z-index: 200;
+}
+
+/**
+ * Кнопка переключения панели
+ * тег <label>
+ */
+
+.navbar-right .nav-toggle-email {
+  /* абсолютно позиционируем */
+  position: absolute;
+  /* относительно правого края панели */
+  right: 440px;
+  /* отступ от верхнего края панели */
+  top: 1em;
+  /* внутренние отступы */
+  padding: 0.5em;
+  /* определяем цвет фона переключателя
+   * чаще вчего в соответствии с цветом фона панели
+  */
+  background: inherit;
+  /* цвет текста */
+  color: #dadada;
+  /* вид курсора */
+  cursor: pointer;
+  /* размер шрифта */
+  font-size: 1.2em;
+  line-height: 1;
+  /* всегда поверх других элементов страницы */
+  z-index: 201;
+  /* анимируем цвет текста при наведении */
+  -webkit-transition: color .25s ease-in-out;
+  -moz-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
+}
+
+/* определяем текст кнопки
+ * символ Unicode (TRIGRAM FOR HEAVEN)
+*/
+
+/*.nav-toggle:after {*/
+/*content: '\2630';*/
+/*text-decoration: none;*/
+/*}*/
+
+/* цвет текста при наведении */
+
+.navbar-right .nav-toggle-email:hover {
+  color: #f4f4f4;
+}
+
+/**
+ * Скрытый чекбокс (флажок)
+ * невидим и недоступен :)
+ * имя селектора атрибут флажка
+ */
+
+.navbar-right [id='nav-toggle-email'] {
+  position: absolute;
+  display: none;
+}
+
+/**
+ * изменение положения переключателя
+ * при просмотре на мобильных устройствах
+ * когда навигация раскрыта, распологаем внутри панели
+*/
+
+.navbar-right [id='nav-toggle-email']:checked ~ .nav-email > .nav-toggle-email {
+  left: auto;
+  right: 1px;
+  top: 0;
+}
+
+/**
+ * Когда флажок установлен, открывается панель
+ * используем псевдокласс:checked
+ */
+
+.navbar-right [id='nav-toggle-email']:checked ~ .nav-email {
+  right: 0;
+  box-shadow: -4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+.navbar-right [id='nav-toggle-email']
+:checked ~ .nav-email > .nav-toggle-email:after {
+  content: '\2715';
+}
+
+body {
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+  to {
+    padding: 0;
+  }
+}
+
+/**
+ * позаботьтимся о средних и маленьких экранах
+ * мобильных устройств
+ */
+
+@media screen and (min-width: 440px) {
+  html,
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  html,
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .nav-email {
+    width: 100%;
+    box-shadow: none
+  }
+}
+
+.navbar-right ul li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.navbar-right input.message-us, .navbar-right input.message-to-us {
+  width: 440px;
+  height: 44px;
+  position: relative;
+  right: 13px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background: darkgreen;
+}
+
+.navbar-right input.message-to-us {
+  height: 140px;
+}
+
+.rightbar-email .btn-inp {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  color: gray;
+  float: right;
+  font-size: 16px;
+  float: right;
+  padding-top: 7px;
+  font-weight: 600;
+  border-bottom: 3px solid #fbfbfb;
+  padding-bottom: 6px;
+}
+
+.rightbar-email .btn-inp:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-right input[type="text"]::-webkit-input-placeholder {
+  color: white;
+}
+
+.navbar-right input[type="text"]::-moz-placeholder {
+  color: white;
+
+}
+
+.navbar-right input[type="email"]::-webkit-input-placeholder {
+  color: white;
+}
+
+.navbar-right input[type="email"]::-moz-placeholder {
+  color: white;
+}
