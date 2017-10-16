@@ -48,25 +48,25 @@
   <!--</div>-->
   <!--</div>-->
   <div class="main">
-    <div class="slide-container">
-      <div class="slide">
-        <div class="slide-header"><img src="images/user_poster_u1930.png"></div>
-        <div class="slide-content">
-          <span>Приветствуем вас</span>
-          <input class="btn-user-in" type="button" value="Войти" id="flip">
-          <div id="panel">
-            <div class="upper-login">
-              <input class="log-in" type="text" placeholder="Введите логин..." required>
-              <input class="log-in" type="password" placeholder="Введите пароль..." required>
-            </div>
-            <div class="chek-b">
-              <input class="save-me" type="checkbox" name="save-me" value="remember me">Запомнить меня
-            </div>
-            <input class="btn-log" type="button" value="Войти">
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--<div class="slide-container">-->
+      <!--<div class="slide">-->
+        <!--<div class="slide-header"><img src="images/user_poster_u1930.png"></div>-->
+        <!--<div class="slide-content">-->
+          <!--<span>Приветствуем вас</span>-->
+          <!--<input class="btn-user-in" type="button" value="Войти" id="flip">-->
+          <!--<div id="panel">-->
+            <!--<div class="upper-login">-->
+              <!--<input class="log-in" type="text" placeholder="Введите логин..." required>-->
+              <!--<input class="log-in" type="password" placeholder="Введите пароль..." required>-->
+            <!--</div>-->
+            <!--<div class="chek-b">-->
+              <!--<input class="save-me" type="checkbox" name="save-me" value="remember me">Запомнить меня-->
+            <!--</div>-->
+            <!--<input class="btn-log" type="button" value="Войти">-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
     <!--<ul class="nav-right">-->
       <!--<li class="lang">-->
         <!--<a href="#">UA</a>-->
@@ -80,10 +80,19 @@
     <!--</ul>-->
   </div>
   <div class="page-product row">
-    <div class="img-product col-md-4">
-      <img src="images/product.jpg">
+    <div class="img-product col-md-5">
+      <!--<img src="images/product.jpg">-->
+      <!--<h2>Illustrations<em> (Image 2)</em></h2>-->
+      <p class="thumbs">
+        <a href="images/img2-lg.jpg" title="Image 2"><img src="images/img2-lg.jpg"></a>
+        <a href="images/img3-lg.jpg" title="Image 3"><img src="images/img3-lg.jpg"></a>
+        <a href="images/img4-lg.jpg" title="Image 4"><img src="images/img4-lg.jpg"></a>
+        <a href="images/img5-lg.jpg" title="Image 5"><img src="images/img5-lg.jpg"></a>
+        <!--<a href="images/img6-lg.jpg" title="Image 6"><img src="images/img6-lg.jpg"></a>-->
+      </p>
+      <p><img id="largeImg" src="images/img2-lg.jpg" alt="Image 2"></p>
     </div>
-    <div class="info-product col-md-8">
+    <div class="info-product col-md-7">
       <a href="#"><p><< К выбору продукции</p></a>
       <div class="inf-product">
         <h1>Сульфат органический 46%</h1>
@@ -97,8 +106,8 @@
           <form>
             <input type="tel" placeholder="Ваш номер..." maxlength="16" minlength="5" pattern="[0-9+]+" required>
             <input type="submit" value="Купить">
+            <input type="submit" value="Консультация">
           </form>
-          <input type="button" value="Консультация">
         </div>
         <div class="inf-tab">
           <div class="tabs">

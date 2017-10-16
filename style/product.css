@@ -26,7 +26,7 @@ body { overflow-x: hidden; }
 }
 
 .page-product .inf-product {
-  margin-left: 90px;
+  margin-left: 20px;
 }
 
 .page-product .inf-product img {
@@ -35,7 +35,7 @@ body { overflow-x: hidden; }
 }
 
 .page-product .inf-product li, .tab_item, .tab, .inf-contact {
-  color: #cecece;
+  color: rgba(255, 255, 255, 0.91);
   font-size: 20px;
   font-family: play, sans-serif;
   font-weight: 400;
@@ -59,10 +59,16 @@ body { overflow-x: hidden; }
 .inp-form input {
   margin-right: 15px;
   background-color: rgba(50,50,50,0.7);
-  padding: 6px 33px;
+  padding: 9px 33px;
   color: #FFFFFF;
   font-size: 18px;
   border: outset;
+  margin-top: 5px;
+  border: none;
+}
+
+.inp-form input:hover {
+  background-color: #464646;
 }
 
 /* tabs */
@@ -72,15 +78,15 @@ body { overflow-x: hidden; }
 
 .page-product .inf-tab .active {
   color: white;
+  font-weight: 600;
 }
 
 .page-product .tab {
   cursor: pointer;
-  border: 1px solid white;
-  border-radius: 3px 3px 0 0;
   padding: .5em;
   display: inline-block;
-
+  border-bottom: 3px solid #fbfbfb;
+  margin-left: 12px;
 }
 
 .page-product .tab_item {
@@ -99,4 +105,39 @@ body { overflow-x: hidden; }
 
 .page-product .tab_content {
   margin-bottom: 60px;
+}
+
+
+
+.page-product .img-product  p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+  }
+.page-product .img-product  #largeImg {
+    border: solid 1px #ccc;
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+  }
+.page-product .img-product  a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: auto;
+    text-decoration: underline;
+  }
+.page-product .img-product  .thumbs img {
+    border: solid 1px #ccc;
+    width: 100px;
+    height: 100px;
+    padding: 4px;
+  }
+
+.page-product .img-product .thumbs {
+  display: inline-grid;
+}
+
+.page-product .img-product {
+  display: flex;
 }
