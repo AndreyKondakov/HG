@@ -90,9 +90,8 @@ body { overflow-x: hidden; }
 }
 
 .page-product .tab_item {
-  border: 1px solid white;
-  border-radius: 3px;
   padding: 1em;
+  background: rgba(0, 0, 0, 0.42);
 }
 
 .page-product .tab_content {
