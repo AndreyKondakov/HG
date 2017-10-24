@@ -142,35 +142,33 @@ body { overflow-x: hidden; }
 }
 
 
-/*.img-product {*/
-  .image {
-    cursor:pointer;
-  }
+.image {
+  cursor:pointer;
+}
 
-  .popup {
-    position: absolute;
-    height:100%;
-    width:100%;
-    top:0;
-    left:0;
-    display:none;
-    text-align:center;
-  }
+.popup {
+  position: absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+}
 
-  .popup_bg {
-    background:rgba(0,0,0,0.4);
-    position:absolute;
-    z-index:1;
-    height:100%;
-    width:100%;
-  }
+.popup_bg {
+  background:rgba(0,0,0,0.4);
+  position:absolute;
+  z-index:1;
+  height:100%;
+  width:100%;
+}
 
-  .popup_img {
-    position: relative;
-    margin:0 auto;
-    z-index:2;
-    max-height:87%;
-    max-width:94%;
-    margin:4% 0 0 0;
-  }
-/*}*/
+.popup_img {
+  position: relative;
+  margin:0 auto;
+  z-index:2;
+  max-height:87%;
+  max-width:94%;
+  margin:4% 0 0 0;
+}

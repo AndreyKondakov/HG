@@ -24,7 +24,7 @@ $(document).ready(function(){
 });
 
 
-
+// Add for product, bigger photo onclick
 $(document).ready(function() { // Ждём загрузки страницы
   $(".image").click(function(){	// Событие клика на маленькое изображение
     var img = $(this);	// Получаем изображение, на которое кликнули

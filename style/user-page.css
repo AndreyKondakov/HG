@@ -1,0 +1,66 @@
+.user-page {
+  background: black;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.user-page .first-block {
+  background: gray;
+  width: 189px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-page .first-block button.btn-first-block  {
+  height: 38px;
+  background: #505050;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.user-page .first-block .weather {
+  margin-left: 13px;
+}
+
+.user-page .first-block .maps {
+  background: green;
+  height: 200px;
+}
+
+.user-page .second-block {
+  flex-grow: 1;
+  background: darkblue;
+  color: white;
+  padding: 10px;
+}
+
+.user-page .second-block span.time-delivery {
+  color: #ff9900;
+  font-size: 16px;
+}
+
+.user-page .second-block p {
+  font-size: 16px;
+  color: #7f7f7f;
+}
+
+.user-page .second-block .delivery-info {
+  padding: 10px 30px;
+}
+
+.user-page .second-block .inf-tab .tab {
+  border-bottom: 3px solid #fbfbfb;
+  padding: 0.5em 28px;
+  margin-left: 7%;
+}
+.user-page .second-block .inf-tab .tab_content {
+  margin-top: 25px;
+}
+
+.user-page .third-block {
+  background: orange;
+  width: 400px;
+}
+
