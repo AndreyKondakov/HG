@@ -4,14 +4,12 @@
   display: flex;
   flex-direction: row;
 }
-
 .user-page .first-block {
   background: gray;
   width: 189px;
   display: flex;
   flex-direction: column;
 }
-
 .user-page .first-block button.btn-first-block  {
   height: 38px;
   background: #505050;
@@ -19,48 +17,86 @@
   color: white;
   font-size: 16px;
 }
-
-.user-page .first-block .weather {
-  margin-left: 13px;
+.user-page .first-block .weather img {
+  width: 189px;
 }
-
 .user-page .first-block .maps {
   background: green;
   height: 200px;
 }
-
 .user-page .second-block {
   flex-grow: 1;
   background: darkblue;
-  color: white;
+  color: #7f7f7f;
   padding: 10px;
 }
-
+.user-page .second-block h1 {
+  color: white;
+  margin-bottom: 10px;
+}
 .user-page .second-block span.time-delivery {
   color: #ff9900;
   font-size: 16px;
 }
-
+div.second-block > div.inf-tab > div.tab_content > div:nth-child(2) > div:nth-child(1) > div > div.marg-top {
+  margin-top: 25px;
+}
 .user-page .second-block p {
   font-size: 16px;
   color: #7f7f7f;
 }
-
+.user-page .second-block .item .mass {
+  color: #7f7f7f;
+}
 .user-page .second-block .delivery-info {
   padding: 10px 30px;
 }
-
-.user-page .second-block .inf-tab .tab {
-  border-bottom: 3px solid #fbfbfb;
+.user-page .second-block .inf-tab .tab, user-page .third-block .info-tab .tab-one {
+  border-bottom: 3px solid #7f7f7f;
   padding: 0.5em 28px;
   margin-left: 7%;
+  cursor: pointer;
+  color: #7f7f7f;
+}
+.user-page .second-block .inf-tab .active, .user-page .third-block .info-tab .active {
+  color: white;
+  border-bottom: 3px solid #ff9900;
+}
+.user-page .second-block .inf-tab {
+  font-size: 16px;
+}
+div.second-block > div.inf-tab > div.tab_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+}
+div.second-block > div.inf-tab > div.tab_content .item {
+  border: 1px solid black;
+  padding: 10px 25px;
+  margin-right: 10px;
+
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-basis: 100px;
 }
 .user-page .second-block .inf-tab .tab_content {
   margin-top: 25px;
 }
+div.second-block > div.inf-tab > div.tab_content .info div.sub-text {
+  margin-bottom: 15px;
+  color: white;
+}
+div.second-block > div.inf-tab > div.tab_content .tab_item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 
 .user-page .third-block {
   background: orange;
-  width: 400px;
+  /*width: 400px;*/
+  flex-basis: 400px;
 }
 
