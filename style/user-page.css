@@ -22,7 +22,7 @@
 }
 .user-page .first-block .maps {
   background: green;
-  height: 200px;
+  height: 237px;
 }
 .user-page .second-block {
   flex-grow: 1;
@@ -51,7 +51,7 @@ div.second-block > div.inf-tab > div.tab_content > div:nth-child(2) > div:nth-ch
 .user-page .second-block .delivery-info {
   padding: 10px 30px;
 }
-.user-page .second-block .inf-tab .tab, user-page .third-block .info-tab .tab-one {
+.user-page .second-block .inf-tab .tab, .user-page .third-block .info-tab .tab-one {
   border-bottom: 3px solid #7f7f7f;
   padding: 0.5em 28px;
   margin-left: 7%;
@@ -62,13 +62,13 @@ div.second-block > div.inf-tab > div.tab_content > div:nth-child(2) > div:nth-ch
   color: white;
   border-bottom: 3px solid #ff9900;
 }
-.user-page .second-block .inf-tab {
+.user-page .second-block .inf-tab, .user-page .third-block .info-tab {
   font-size: 16px;
 }
 div.second-block > div.inf-tab > div.tab_content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: stretch;
 }
 div.second-block > div.inf-tab > div.tab_content .item {
@@ -93,10 +93,105 @@ div.second-block > div.inf-tab > div.tab_content .tab_item {
   flex-direction: row;
   flex-wrap: nowrap;
 }
+.user-page .second-block .padding-r {
+  padding: 0 75px;
+}
 
+.second-block .tab_item .gallery {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+.second-block .tab_item .gallery .photo {
+  border: 1px solid black;
+  width: 170px;
+  height: 170px;
+}
+
+.second-block .tab_item .gallery .title {
+  text-align: center;
+  padding: 5px 0;
+  width: 170px;
+}
+.second-block .tab_item .gallery .title a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.user-page .second-block .btn-info {
+  color: #ff9900;
+  text-decoration: none;
+  background: none;
+  font-size: 20px;
+}
+body > div > div > div.second-block > div.inf-tab > div.tab_content > div:nth-child(1) > div.item.right-marg {
+  margin-right: 87px;
+}
 .user-page .third-block {
-  background: orange;
+  background: #fff709;
   /*width: 400px;*/
   flex-basis: 400px;
 }
+.user-page .third-block .tab_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.user-page .third-block .tab-content {
+  margin-top: 30px;
+}
+.user-page .third-block .all-tabs {
+  margin: 11px 0;
+}
+.user-page .third-block .tab_content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.user-page .third-block .item {
+  border: 1px solid black;
+  padding-right: 10px;
+  margin-right: 10px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  height: 116px;
+}
+.user-page .third-block .photo {
+  border: 1px solid black;
+  width: 171px;
+  height: 114px;
+  margin-right: 10px;
+}
+.user-page .third-block .photo img, .second-block .tab_item .gallery .photo img {
+  height: 100%;
+  width: 100%;
+}
+.user-page .third-block .info {
+  border: 1px solid black;
+  padding: 0 5px;
+  flex-grow: 1;
+  flex-basis: 114px;
+  font-size: 12px;
+  color: #7f7f7f;
+  overflow: hidden;
+}
+.user-page .third-block .info a {
+  text-decoration: none;
+  color: #fff;
+}
+.user-page .third-block .info h4 {
+  padding-bottom: 7px;
+}
 
+.user-page .third-block .btn-show-all {
+  color: #7f7f7f;
+  font-size: 16px;
+  border: none;
+  background: none;
+}
