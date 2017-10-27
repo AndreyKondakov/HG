@@ -51,16 +51,29 @@ div.second-block > div.inf-tab > div.tab_content > div:nth-child(2) > div:nth-ch
 .user-page .second-block .delivery-info {
   padding: 10px 30px;
 }
-.user-page .second-block .inf-tab .tab, .user-page .third-block .info-tab .tab-one {
-  border-bottom: 3px solid #7f7f7f;
-  padding: 0.5em 28px;
-  margin-left: 7%;
-  cursor: pointer;
-  color: #7f7f7f;
-}
+/*.user-page .second-block .inf-tab .tab, .user-page .third-block .info-tab .tab-one {*/
+  /*!*border-bottom: 3px solid #7f7f7f;*!*/
+  /*padding: 0.5em 28px;*/
+  /*!*margin-left: 7%;*!*/
+  /*cursor: pointer;*/
+  /*color: #7f7f7f;*/
+/*}*/
 .user-page .second-block .inf-tab .active, .user-page .third-block .info-tab .active {
   color: white;
-  border-bottom: 3px solid #ff9900;
+  /*border-bottom: 3px solid #ff9900;*/
+}
+.user-page .second-block .inf-tab .active hr, .user-page .third-block .info-tab .active hr {
+  border-color: #ff9900;
+}
+.user-page .second-block hr {
+  width: 170px;
+  margin-top: 10px;
+  border-top: 3px solid #7f7f7f;
+}
+.user-page .second-block .btn-tab {
+  display: inline-block;
+  margin-right: 55px;
+  /*text-align: center;*/
 }
 .user-page .second-block .inf-tab, .user-page .third-block .info-tab {
   font-size: 16px;
@@ -68,7 +81,7 @@ div.second-block > div.inf-tab > div.tab_content > div:nth-child(2) > div:nth-ch
 div.second-block > div.inf-tab > div.tab_content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
 }
 div.second-block > div.inf-tab > div.tab_content .item {
@@ -81,9 +94,9 @@ div.second-block > div.inf-tab > div.tab_content .item {
   flex-grow: 1;
   flex-basis: 100px;
 }
-.user-page .second-block .inf-tab .tab_content {
-  margin-top: 25px;
-}
+/*.user-page .second-block .inf-tab .tab_content {*/
+  /*margin-top: 25px;*/
+/*}*/
 div.second-block > div.inf-tab > div.tab_content .info div.sub-text {
   margin-bottom: 15px;
   color: white;
@@ -94,7 +107,7 @@ div.second-block > div.inf-tab > div.tab_content .tab_item {
   flex-wrap: nowrap;
 }
 .user-page .second-block .padding-r {
-  padding: 0 75px;
+  padding: 0 68px;
 }
 
 .second-block .tab_item .gallery {
@@ -102,7 +115,10 @@ div.second-block > div.inf-tab > div.tab_content .tab_item {
   flex-direction: row;
   border: 1px solid black;
   margin-bottom: 20px;
-  margin-right: 30px;
+  margin-right: 21px;
+}
+.second-block .tabs {
+  text-align: center;
 }
 .second-block .tab_item .gallery .photo {
   border: 1px solid black;
@@ -126,11 +142,11 @@ div.second-block > div.inf-tab > div.tab_content .tab_item {
   background: none;
   font-size: 20px;
 }
-body > div > div > div.second-block > div.inf-tab > div.tab_content > div:nth-child(1) > div.item.right-marg {
-  margin-right: 87px;
-}
+/*body > div > div > div.second-block > div.inf-tab > div.tab_content > div:nth-child(1) > div.item.right-marg {*/
+  /*margin-right: 87px;*/
+/*}*/
 .user-page .third-block {
-  background: #fff709;
+  background: #8d9089;
   /*width: 400px;*/
   flex-basis: 400px;
 }
@@ -145,6 +161,7 @@ body > div > div > div.second-block > div.inf-tab > div.tab_content > div:nth-ch
 }
 .user-page .third-block .all-tabs {
   margin: 11px 0;
+  text-align: center;
 }
 .user-page .third-block .tab_content {
   display: flex;
@@ -155,7 +172,7 @@ body > div > div > div.second-block > div.inf-tab > div.tab_content > div:nth-ch
 }
 .user-page .third-block .item {
   border: 1px solid black;
-  padding-right: 10px;
+  /*padding-right: 10px;*/
   margin-right: 10px;
   margin-bottom: 16px;
   display: flex;
@@ -166,7 +183,7 @@ body > div > div > div.second-block > div.inf-tab > div.tab_content > div:nth-ch
   border: 1px solid black;
   width: 171px;
   height: 114px;
-  margin-right: 10px;
+  margin-right: 21px;
 }
 .user-page .third-block .photo img, .second-block .tab_item .gallery .photo img {
   height: 100%;
